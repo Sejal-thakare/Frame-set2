@@ -1,0 +1,207 @@
+<body>
+    <center>
+        <h1>Java history</h1>
+    </center>
+    Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991.[23] Java was originally
+    designed for interactive television, but it was too advanced for the digital cable television industry at the
+    time.[24] The language was initially called Oak after an oak tree that stood outside Gosling's office. Later the
+    project went by the name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia.[25]
+    Gosling designed Java with a C/C++-style syntax that system and application programmers would find familiar.[26]<br><br>
+
+    Sun Microsystems released the first public implementation as Java 1.0 in 1996.[27] It promised write once, run
+    anywhere (WORA) functionality, providing no-cost run-times on popular platforms. Fairly secure and featuring
+    configurable security, it allowed network- and file-access restrictions. Major web browsers soon incorporated the
+    ability to run Java applets within web pages, and Java quickly became popular. The Java 1.0 compiler was re-written
+    in Java by Arthur van Hoff to comply strictly with the Java 1.0 language specification.[28] With the advent of Java
+    2 (released initially as J2SE 1.2 in December 1998 – 1999), new versions had multiple configurations built for
+    different types of platforms. J2EE included technologies and APIs for enterprise applications typically run in
+    server environments, while J2ME featured APIs optimized for mobile applications. The desktop version was renamed
+    J2SE. In 2006, for marketing purposes, Sun renamed new J2 versions as Java EE, Java ME, and Java SE, respectively.<br><br>
+
+    In 1997, Sun Microsystems approached the ISO/IEC JTC 1 standards body and later the Ecma International to formalize
+    Java, but it soon withdrew from the process.[29][30][31] Java remains a de facto standard, controlled through the
+    Java Community Process.[32] At one time, Sun made most of its Java implementations available without charge, despite
+    their proprietary software status. Sun generated revenue from Java through the selling of licenses for specialized
+    products such as the Java Enterprise System.<br><br>
+
+    On November 13, 2006, Sun released much of its Java virtual machine (JVM) as free and open-source software (FOSS),
+    under the terms of the GPL-2.0-only license. On May 8, 2007, Sun finished the process, making all of its JVM's core
+    code available under free software/open-source distribution terms, aside from a small portion of code to which Sun
+    did not hold the copyright.[33]<br><br>
+
+    Sun's vice-president Rich Green said that Sun's ideal role with regard to Java was as an evangelist.[34] Following
+    Oracle Corporation's acquisition of Sun Microsystems in 2009–10, Oracle has described itself as the steward of Java
+    technology with a relentless commitment to fostering a community of participation and transparency.[35] This did not
+    prevent Oracle from filing a lawsuit against Google shortly after that for using Java inside the Android SDK (see
+    the Android section).<br><br>
+
+    On April 2, 2010, James Gosling resigned from Oracle.[36]
+
+    In January 2016, Oracle announced that Java run-time environments based on JDK 9 will discontinue the browser
+    plugin.[37]<br><br>
+
+    Java software runs on everything from laptops to data centers, game consoles to scientific supercomputers.[38]
+
+    Principles
+    There were five primary goals in the creation of the Java language:<br><br>
+
+    It must be simple, object-oriented, and familiar.<br>
+    It must be robust and secure.<br>
+    It must be architecture-neutral and portable.<br>
+    It must execute with high performance.<br>
+    It must be interpreted, threaded, and dynamic.<br>
+    Versions
+    Main article: Java version history
+    As of September 2021, Java 8, 11 and 17 are supported as Long-Term Support (LTS) versions.[39] Major release
+    versions of Java, along with their release dates:
+
+    Version Date<br>
+    JDK Beta 1995<br>
+    JDK1.0 January 23, 1996[40]<br>
+    JDK 1.1 February 19, 1997<br>
+    J2SE 1.2 December 8, 1998<br>
+    J2SE 1.3 May 8, 2000<br>
+    J2SE 1.4 February 6, 2002<br>
+    J2SE 5.0 September 30, 2004<br>
+    Java SE 6 December 11, 2006<br>
+    Java SE 7 July 28, 2011<br>
+    Java SE 8 (LTS) March 18, 2014<br>
+    Java SE 9 September 21, 2017<br>
+    Java SE 10 March 20, 2018<br>
+    Java SE 11 (LTS) September 25, 2018[41]<br>
+    Java SE 12 March 19, 2019<br>
+    Java SE 13 September 17, 2019<br>
+    Java SE 14 March 17, 2020<br>
+    Java SE 15 September 15, 2020[42]<br>
+    Java SE 16 March 16, 2021<br>
+    Java SE 17 (LTS) September 14, 2021<br>
+    Java SE 18 March 2022<br><br>
+    Editions
+    See also: Free Java implementations § Class library
+    Java platform editions<br>
+    Duke (Java mascot) waving.svg<br>
+    Java Card<br>
+    Java ME (Micro)<br>
+    Java SE (Standard)<br>
+    Jakarta EE (Enterprise<br>)
+    JavaFX (bundled in JRE frovm 8 to 10 but separately for JavaFX 1.x, 2.x and again since 11)<br>
+    PersonalJava (Discontinued)<br>
+    vte
+    Sun has defined and supports four editions of Java targeting different application environments and segmented many
+    of its APIs so that they belong to one of the platforms. The platforms are:
+
+    Java Card for smart-cards.[43]<br>
+    Java Platform, Micro Edition (Java ME) – targeting environments with limited resources.[44]<br>
+    Java Platform, Standard Edition (Java SE) – targeting workstation environments.[45]<br>
+    Java Platform, Enterprise Edition (Java EE) – targeting large distributed enterprise or Internet environments.[46]<br>
+    The classes in the Java APIs are organized into separate groups called packages. Each package contains a set of<br>
+    related interfaces, classes, subpackages and exceptions.<br>
+
+    Sun also provided an edition called Personal Java that has been superseded by later, standards-based Java ME
+    configuration-profile pairings.<br>
+
+    Execution system
+    Java JVM and bytecode
+    Main articles: Java (software platform) and Java virtual machine
+    One design goal of Java is portability, which means that programs written for the Java platform must run similarly
+    on any combination of hardware and operating system with adequate run time support. This is achieved by compiling
+    the Java language code to an intermediate representation called Java bytecode, instead of directly to
+    architecture-specific machine code. Java bytecode instructions are analogous to machine code, but they are intended
+    to be executed by a virtual machine (VM) written specifically for the host hardware. End-users commonly use a Java
+    Runtime Environment (JRE) installed on their device for standalone Java applications or a web browser for Java
+    applets.<br><br>
+
+    Standard libraries provide a generic way to access host-specific features such as graphics, threading, and
+    networking.
+
+    The use of universal bytecode makes porting simple. However, the overhead of interpreting bytecode into machine
+    instructions made interpreted programs almost always run more slowly than native executables. Just-in-time (JIT)
+    compilers that compile byte-codes to machine code during runtime were introduced from an early stage. Java's Hotspot
+    compiler is actually two compilers in one; and with GraalVM (included in e.g. Java 11, but removed as of Java 16)
+    allowing tiered compilation.[47] Java itself is platform-independent and is adapted to the particular platform it is
+    to run on by a Java virtual machine (JVM) for it, which translates the Java bytecode into the platform's machine
+    language.[48]<br><br>
+
+    Performance
+    Main article: Java performance
+    Programs written in Java have a reputation for being slower and requiring more memory than those written in C++
+    .[49][50] However, Java programs' execution speed improved significantly with the introduction of just-in-time
+    compilation in 1997/1998 for Java 1.1,[51] the addition of language features supporting better code analysis (such
+    as inner classes, the StringBuilder class, optional assertions, etc.), and optimizations in the Java virtual
+    machine, such as HotSpot becoming Sun's default JVM in 2000. With Java 1.5, the performance was improved with the
+    addition of the java.util.concurrent package, including lock-free implementations of the ConcurrentMaps and other
+    multi-core collections, and it was improved further with Java 1.6.<br><br>
+
+    Non-JVM
+    Some platforms offer direct hardware support for Java; there are micro controllers that can run Java bytecode in
+    hardware instead of a software Java virtual machine,[52] and some ARM-based processors could have hardware support
+    for executing Java bytecode through their Jazelle option, though support has mostly been dropped in current
+    implementations of ARM.<br><br>
+
+    Automatic memory management
+    Java uses an automatic garbage collector to manage memory in the object lifecycle. The programmer determines when
+    objects are created, and the Java runtime is responsible for recovering the memory once objects are no longer in
+    use. Once no references to an object remain, the unreachable memory becomes eligible to be freed automatically by
+    the garbage collector. Something similar to a memory leak may still occur if a programmer's code holds a reference
+    to an object that is no longer needed, typically when objects that are no longer needed are stored in containers
+    that are still in use. If methods for a non-existent object are called, a null pointer exception is thrown.[53][54]<br><br>
+
+    One of the ideas behind Java's automatic memory management model is that programmers can be spared the burden of
+    having to perform manual memory management. In some languages, memory for the creation of objects is implicitly
+    allocated on the stack or explicitly allocated and deallocated from the heap. In the latter case, the responsibility
+    of managing memory resides with the programmer. If the program does not deallocate an object, a memory leak occurs.
+    If the program attempts to access or deallocate memory that has already been deallocated, the result is undefined
+    and difficult to predict, and the program is likely to become unstable or crash. This can be partially remedied by
+    the use of smart pointers, but these add overhead and complexity. Note that garbage collection does not prevent
+    logical memory leaks, i.e. those where the memory is still referenced but never used.<br><br>
+
+    Garbage collection may happen at any time. Ideally, it will occur when a program is idle. It is guaranteed to be
+    triggered if there is insufficient free memory on the heap to allocate a new object; this can cause a program to
+    stall momentarily. Explicit memory management is not possible in Java.<br><br>
+
+    Java does not support C/C++ style pointer arithmetic, where object addresses can be arithmetically manipulated (e.g.
+    by adding or subtracting an offset). This allows the garbage collector to relocate referenced objects and ensures
+    type safety and security.<br><br>
+
+    As in C++ and some other object-oriented languages, variables of Java's primitive data types are either stored
+    directly in fields (for objects) or on the stack (for methods) rather than on the heap, as is commonly true for
+    non-primitive data types (but see escape analysis). This was a conscious decision by Java's designers for
+    performance reasons.
+    <br><br>
+    Java contains multiple types of garbage collectors. Since Java 9, HotSpot uses the Garbage First Garbage Collector
+    (G1GC) as the default.[55] However, there are also several other garbage collectors that can be used to manage the
+    heap. For most applications in Java, G1GC is sufficient. Previously, the Parallel Garbage Collector was used in Java
+    8.
+    <br><br>
+    Having solved the memory management problem does not relieve the programmer of the burden of handling properly other
+    kinds of resources, like network or database connections, file handles, etc., especially in the presence of
+    exceptions.
+    <br><br><br>
+    Syntax
+    Main article: Java syntax
+    <br>
+    Dependency graph of the Java Core classes (created with jdeps and Gephi)
+    The syntax of Java is largely influenced by C++ and C. Unlike C++, which combines the syntax for structured,
+    generic, and object-oriented programming, Java was built almost exclusively as an object-oriented language.[18] All
+    code is written inside classes, and every data item is an object, with the exception of the primitive data types,
+    (i.e. integers, floating-point numbers, boolean values, and characters), which are not objects for performance
+    reasons. Java reuses some popular aspects of C++ (such as the printf method).
+    <br><br>
+    Unlike C++, Java does not support operator overloading[56] or multiple inheritance for classes, though multiple
+    inheritance is supported for interfaces.[57]
+    <br><br>
+    Java uses comments similar to those of C++. There are three different styles of comments: a single line style marked
+    with two slashes (//), a multiple line style opened with /* and closed with */, and the Javadoc commenting style
+    opened with /** and closed with */. The Javadoc style of commenting allows the user to run the Javadoc executable to
+    create documentation for the program and can be read by some integrated development environments (IDEs) such as
+    Eclipse to allow developers to access documentation within the IDE.
+    <br><br>
+    Hello world example<br>
+    The traditional Hello world program can be written in Java as:[58]
+
+    public class HelloWorldApp {
+    public static void main(String[] args) {
+    System.out.println("Hello World!"); // Prints the string to the console.
+    }
+    }
+</body>

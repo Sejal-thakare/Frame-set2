@@ -1,0 +1,105 @@
+<body>
+    <center>
+        <h1>C language data</h1>
+    </center>
+</body>
+C programming language" redirects here. For the book, see The C Programming Language.
+Not to be confused with C++.
+C
+Text in light blue serif capital letters on white background and very large light blue sans-serif letter C.
+The C Programming Language[1] (often referred to as K&R), the seminal book on C
+Paradigm	Multi-paradigm: imperative (procedural), structured
+Designed by	Dennis Ritchie
+Developer	Dennis Ritchie & Bell Labs (creators); ANSI X3J11 (ANSI C); ISO/IEC JTC1/SC22/WG14 (ISO C)
+First appeared	1972; 49 years ago[2]
+Stable release	
+C17 / June 2018; 3 years ago
+Preview release	
+C2x (N2731) / October 18, 2021; 2 months ago[3]
+Typing discipline	Static, weak, manifest, nominal
+OS	Cross-platform
+Filename extensions	.c, .h
+Website	www.iso.org/standard/74528.html
+www.open-std.org/jtc1/sc22/wg14/
+Major implementations
+K&R C, GCC, Clang, Intel C, C++Builder, Microsoft Visual C++, Watcom C
+Dialects
+Cyclone, Unified Parallel C, Split-C, Cilk, C*
+Influenced by
+B (BCPL, CPL), ALGOL 68,[4] assembly, PL/I, FORTRAN
+Influenced
+Numerous: AMPL, AWK, csh, C++, C--, C#, Objective-C, D, Go, Java, JavaScript, JS++, Julia, Limbo, LPC, Perl, PHP, Pike, Processing, Python, Rust, Seed7, Vala, Verilog (HDL),[5] Nim, Zig
+ C Programming at Wikibooks
+C (/ˈsiː/, as in the letter c) is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions. It has found lasting use in applications previously coded in assembly language. Such applications include operating systems and various application software for computer architectures that range from supercomputers to PLCs and embedded systems.
+
+A successor to the programming language B, C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to construct utilities running on Unix. It was applied to re-implementing the kernel of the Unix operating system.[6] During the 1980s, C gradually gained popularity. It has become one of the most widely used programming languages,[7][8] with C compilers from various vendors available for the majority of existing computer architectures and operating systems. C has been standardized by ANSI since 1989 (ANSI C) and by the International Organization for Standardization (ISO).
+
+C is an imperative procedural language. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code.[9]
+
+Since 2000, C has consistently ranked among the top two languages in the TIOBE index, a measure of the popularity of programming languages.[10]
+<br><br>
+
+Contents
+1	Overview
+1.1	Relations to other languages
+2	History
+2.1	Early developments
+2.2	K&R C
+2.3	ANSI C and ISO C
+2.4	C99
+2.5	C11
+2.6	C17
+2.7	C2x
+2.8	Embedded C
+3	Syntax
+3.1	Character set
+3.2	Reserved words
+3.3	Operators
+4	"Hello, world" example
+5	Data types
+5.1	Pointers
+5.2	Arrays
+5.3	Array–pointer interchangeability
+6	Memory management
+7	Libraries
+7.1	File handling and streams
+8	Language tools
+9	Uses
+10	Related languages
+11	See also
+12	Notes
+13	References
+14	Sources
+15	Further reading
+16	External links
+Overview
+
+Dennis Ritchie (right), the inventor of the C programming language, with Ken Thompson
+Like most procedural languages in the ALGOL tradition, C has facilities for structured programming and allows lexical variable scope and recursion. Its static type system prevents unintended operations. In C, all executable code is contained within subroutines (also called "functions", though not strictly in the sense of functional programming). Function parameters are always passed by value (except arrays). Pass-by-reference is simulated in C by explicitly passing pointer values. C program source text is free-format, using the semicolon as a statement terminator and curly braces for grouping blocks of statements.
+
+The C language also exhibits the following characteristics:
+
+The language has a small, fixed number of keywords, including a full set of control flow primitives: if/else, for, do/while, while, and switch. User-defined names are not distinguished from keywords by any kind of sigil.
+It has a large number of arithmetic, bitwise, and logic operators: +,+=,++,&,||, etc.
+More than one assignment may be performed in a single statement.
+Functions:
+Function return values can be ignored, when not needed.
+Function and data pointers permit ad hoc run-time polymorphism.
+Functions may not be defined within the lexical scope of other functions.
+Data typing is static, but weakly enforced; all data has a type, but implicit conversions are possible.
+Declaration syntax mimics usage context. C has no "define" keyword; instead, a statement beginning with the name of a type is taken as a declaration. There is no "function" keyword; instead, a function is indicated by the presence of a parenthesized argument list.
+User-defined (typedef) and compound types are possible.
+Heterogeneous aggregate data types (struct) allow related data elements to be accessed and assigned as a unit.
+Union is a structure with overlapping members; only the last member stored is valid.
+Array indexing is a secondary notation, defined in terms of pointer arithmetic. Unlike structs, arrays are not first-class objects: they cannot be assigned or compared using single built-in operators. There is no "array" keyword in use or definition; instead, square brackets indicate arrays syntactically, for example month[11].
+Enumerated types are possible with the enum keyword. They are freely interconvertible with integers.
+Strings are not a distinct data type, but are conventionally implemented as null-terminated character arrays.
+Low-level access to computer memory is possible by converting machine addresses to typed pointers.
+Procedures (subroutines not returning values) are a special case of function, with an untyped return type void.
+A preprocessor performs macro definition, source code file inclusion, and conditional compilation.
+There is a basic form of modularity: files can be compiled separately and linked together, with control over which functions and data objects are visible to other files via static and extern attributes.
+Complex functionality such as I/O, string manipulation, and mathematical functions are consistently delegated to library routines.
+While C does not include certain features found in other languages (such as object orientation and garbage collection), these can be implemented or emulated, often through the use of external libraries (e.g., the GLib Object System or the Boehm garbage collector).
+
+Relations to other languages
+Many later languages have borrowed directly or indirectly from C, including C++, C#, Unix's C shell, D, Go, Java, JavaScript (including transpilers), Julia, Limbo, LPC, Objective-C, Perl, PHP, Python, Ruby, Rust, Swift, Verilog and SystemVerilog (hardware description languages).[5] These languages have drawn many of their control structures and other basic features from C. Most of them (Python being a dramatic exception) also express highly similar syntax to C, and they tend to combine the recognizable expression and statement syntax of C with underlying type systems, data models, and semantics that can be radically different.
